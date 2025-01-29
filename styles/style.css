@@ -1,4 +1,70 @@
 .content-section {
-    width: 1100px;
-    margin: 0 auto;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 30px 208px 155px 216px 155px 208px 30px;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas:
+  "menu menu menu logo . address .";
+  justify-items: center;
+  align-items: center;
+  min-height: 100px;
+  padding: 92px 49px;
+}
+
+.header__menu {
+  grid-area: menu;
+}
+.header__links-list {
+  display: flex;
+  column-gap: 29px;
+}
+.header__links-list-item {
+  padding-left: 3px;
+  letter-spacing: 0.1px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header__link_active {
+  border-bottom: none;
+}
+.header__logo {
+  grid-area: logo;
+}
+.header__logo-image { /* TODO: поменять ширину ячейки с изображением в гриде на 136, сам header__logo-image сделать display: block */
+  width: 136px;
+}
+.header__address {
+  grid-area: address;
+  font-size: 18px;
+  line-height: 24px;
+}
+.address {
+  font-style: normal;
+}
+
+.cover {
+
+}
+.lots {
+
+}
+.about {
+
+}
+.footer {
+
 }
