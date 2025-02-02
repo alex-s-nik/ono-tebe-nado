@@ -222,7 +222,7 @@
   grid-template-rows: 250px auto;
   grid-template-areas: "about__logo about__title"
   ". about__text";
-  padding: 180px 28px 0 0;
+  padding: 180px 28px 184px 0;
 }
 
 .about__logo {
@@ -259,5 +259,47 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
 
+.footer__address {
+  width: 240px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer__menu {
+  font-size: 18px;
+}
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.footer__menu-list-item {
+  line-height: 1.15;
+  text-transform: lowercase;
+}
+
+.footer__menu-link {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+}
+
+.footer__menu-link_active {
+  border-bottom: none;
+}
+
+.footer__social-list {
+  display: flex;
+  column-gap: 48px;
+  list-style: none;
+}
+.footer__social-icon {
+  width: 48px;
 }
