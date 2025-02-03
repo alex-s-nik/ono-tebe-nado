@@ -262,7 +262,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 50px 80px;
 }
 
 .footer__address {
