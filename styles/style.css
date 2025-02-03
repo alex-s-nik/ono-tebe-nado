@@ -42,6 +42,7 @@
   border-bottom: none;
 }
 .header__logo {
+  display: block;
   grid-area: logo;
 }
 .header__logo-image { /* TODO: поменять ширину ячейки с изображением в гриде на 136, сам header__logo-image сделать display: block */
@@ -80,7 +81,7 @@
   z-index: 2;
   color: white;
   font-weight:bold;
-  font-size: 67px;
+  font-size: 100px;
   line-height: 1.21;
   text-transform: uppercase;
 }
