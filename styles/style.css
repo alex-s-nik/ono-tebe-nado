@@ -108,28 +108,25 @@
 
 .cover__description {
   display: flex;
-  justify-content: space-around;
-
-  padding-top: 132px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 120px;
+  padding-left: 26px;
   color: white;
   font-size: 22px;
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
 }
 
 .cover__description-text {
-  position: relative;
-  z-index: 2;
   word-spacing: 0.85em;
 }
 
 .bet-button {
-  position: relative;
-  top: -13px;
-  left: 27px;
-  z-index: 2;
   justify-self: flex-end;
   border: 1px solid white;
-  padding: 13px 32px;
+  padding: 13px 32px 10px;
   color: white;
   font-size: 22px;
   text-transform: uppercase;
