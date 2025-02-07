@@ -3,20 +3,15 @@
   margin: 0 auto;
 }
 
-.header {
-  display: grid;
-  grid-template-columns: 30px 208px 155px 216px 155px 208px 30px;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-areas:
-  "menu menu menu logo . address .";
-  justify-items: center;
+.header { 
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  min-height: 100px;
-  padding: 92px 49px;
+  padding: 92px 45px;
 }
 
 .header__menu {
-  grid-area: menu;
+  flex: 1;
 }
 .header__links-list {
   display: flex;
@@ -42,19 +37,21 @@
   border-bottom: none;
 }
 .header__logo {
-  display: block;
-  grid-area: logo;
+  flex: 0 0 136px;
 }
-.header__logo-image { /* TODO: поменять ширину ячейки с изображением в гриде на 136, сам header__logo-image сделать display: block */
+.header__logo-image {
   width: 136px;
 }
 .header__address {
-  grid-area: address;
-  font-size: 18px;
-  line-height: 24px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }
 .address {
+  width: 245px;
+  font-size: 18px;
   font-style: normal;
+  line-height: 24px;
 }
 
 .cover {
